@@ -1,0 +1,14 @@
+As a user I can list all meals [X]
+As a user I can add a meal [X]
+As a user I can list all customers [ ]
+As a user I can add a customer [ ]
+
+(OPTIONALS)
+As a user I can edit a meal [ ]
+As a user I can destroy a meal [ ]
+As a user I can edit a customer [ ]
+As a user I can destroy a customer [ ]
+
+Inheritance
+BaseView [ ]
+BaseRepository [ ]
