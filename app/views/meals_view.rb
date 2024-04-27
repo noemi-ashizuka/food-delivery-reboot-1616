@@ -1,12 +1,13 @@
-class MealsView
-  def display(meals)
-    meals.each_with_index do |meal, index|
-      puts "#{index + 1}. #{meal.name}: ¥#{meal.price}"
-    end
-  end
+require_relative 'base_view'
 
-  def ask_for(thing)
-    puts "What's the #{thing}?"
-    gets.chomp
+class MealsView < BaseView
+  def display(meals) # an array of instances
+    if meals.any?
+      meals.each_with_index do |meal, index|
+        puts "#{index + 1}. #{meal.name} ¥#{meal.price}"
+      end
+    else
+      puts "No meals yet ☹️"
+    end
   end
 end

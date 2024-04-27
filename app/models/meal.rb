@@ -3,8 +3,16 @@ class Meal
   attr_reader :name, :price
 
   def initialize(attributes = {})
-    @id = attributes[:id] # integer
-    @name = attributes[:name] # string
-    @price = attributes[:price] # integer
+    @id = attributes[:id]
+    @name = attributes[:name]
+    @price = attributes[:price]
+  end
+
+  def self.headers
+    ['id', 'name', 'price']
+  end
+
+  def build_row
+    [@id, @name, @price]
   end
 end
