@@ -25,10 +25,12 @@ class Router
     when 2 then @meals_controller.add
     when 3 then @customers_controller.list
     when 4 then @customers_controller.add
+    when 5 then @meals_controller.edit
+    when 6 then @meals_controller.destroy
     # when 3 then @controller.remove
-    when 5 then stop
+    when 7 then stop
     else
-      puts "Please press 1, 2, 3 or 4"
+      puts "Please press 1, 2, 3, 4, 5, 6, or 7"
     end
   end
 
@@ -43,6 +45,8 @@ class Router
     puts "2 - Add a new meal"
     puts "3 - List all the customers"
     puts "4 - Add a new customer"
-    puts "5 - Stop and exit the program"
+    puts "5 - Edit a meal"
+    puts "6 - Delete a meal"
+    puts "7 - Stop and exit the program"
   end
 end
